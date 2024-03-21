@@ -9,8 +9,8 @@ export default function CartItem(props) {
       <div style={{fontSize:12}}>
       <label style={{fontWeight:"bold", fontSize:15}}>{title}<br/></label>
       price: ${price}<br/>
-      author:{author}
-      number: {number}<br/>
+      author: {author}<br/>
+      copies: {number}<br/>
       <label style={{fontWeight:"bold", fontSize:14}}>sum: ${sum.toFixed(2)}</label><br/>
       ------------------------------
       </div>
