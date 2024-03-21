@@ -24,7 +24,9 @@ import Img18 from '../images/grymms.jfif';
 import Img19 from '../images/olivertwist.jfif';
 import Img20 from '../images/alice.jfif';
 import Img21 from '../images/pinocchio.jfif';
-
+import Button from 'react-bootstrap/Button'
+import InportGroup from 'react-bootstrap/InputGroup'
+import { InputGroup } from 'react-bootstrap';
 export default function Showbook() {
   const [Counter,setCounter]=useState(1)
   const [isButtonDisabled,setButtonDisabled]=useState(true);
@@ -102,13 +104,17 @@ useLayoutEffect(()=>
                 {type}<br/>
                 <p>description <br/></p>
                 ${price}<br/><br/>
-                <button onClick={()=>Counter===1?setCounter(1):setCounter(Counter-1)}>-</button>
-          <input style={{width:15}} readOnly value={Counter} ></input>
-          <button onClick={()=>setCounter(Counter+1)}>+</button><br/><br/>
-                <button onClick={handleClick}> Add to cart</button><br/><br/>
-          <Link to="/showcart" >
-            <button disabled={isButtonDisabled}>ShowCart</button>
-          </Link>
+                
+                <InputGroup className='mb-3' >
+                  <Button onClick={()=>Counter===1?setCounter(1):setCounter(Counter-1)} variant="primary" >-</Button>
+                  <InputGroup.Text>{Counter}</InputGroup.Text>
+                  <Button onClick={()=>setCounter(Counter+1)} variant="primary" >+</Button><br/><br/>
+                </InputGroup>
+                
+              <Button onClick={handleClick} variant="primary" > Add to cart</Button><br/>
+              <Link to="/showcart" >
+                <Button disabled={isButtonDisabled} variant='primary' style={{marginTop:15}} >ShowCart</Button><br/>
+              </Link>
             </div>
         </div>
     </div>

@@ -3,10 +3,12 @@ import React,{useState,useRef ,useLayoutEffect,useEffect} from 'react'
 import Menu from './menu.js'
 import CartItem from './cartitem.js';
 import './showcart.css'
+import Button from 'react-bootstrap/Button'
 
 export default function Showcart() {
 const [Cart,setCart]=useState([{cartid:0}])
-const [isButtonDisabled,setButtonDisabled]=useState(false);   
+const [isButtonDisabled,setButtonDisabled]=useState(false);  
+const firstUpdate=useRef(true) 
 /*To ensure useLayoutEffetcs only runs before the page is rendered*/
 useLayoutEffect(()=>
     {
@@ -29,7 +31,7 @@ useLayoutEffect(()=>
         return;
       }
      })
-const firstUpdate=useRef(true)
+
 /*All items in Cart will be sent to CartItem for display with pops  */ 
 const allItems=(value)=>
     {   
@@ -94,7 +96,7 @@ const allItems=(value)=>
               <h2>Cart</h2>
               {Cart.map(allItems)}
               <label style={{fontSize:17, fontWeight:"bold"} }>In total: ${cartres}<br/></label><br/><br/>
-              <button onClick={HandleClick} disabled={isButtonDisabled}>ClearCart</button>
+              <Button onClick={HandleClick} disabled={isButtonDisabled}>ClearCart</Button>
           </div>
           <div className='cartpage2'>
             <h2>Check out</h2>
@@ -108,7 +110,7 @@ const allItems=(value)=>
               <label>Name: <br/><input style={{width:270}}></input></label><br/><br/>
               <label>Email: <br/><input style={{width:270}}></input></label><br/><br/>
               <label>Message:<br/><textarea cols={35} rows={5}></textarea></label><br/><br/>
-              <button onClick={HandleClick2}>Check out</button>
+              <Button onClick={HandleClick2}>Check out</Button>
           </div>
         </div>
     </div>

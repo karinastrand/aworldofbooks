@@ -7,7 +7,7 @@ export default function CartItem(props) {
   {
   return(
       <div style={{fontSize:12}}>
-      <label style={{fontWeight:"bold", fontSize:15}}>{title}<br/></label>
+      <label style={{fontWeight:"bold", fontSize:15}}>{title}<br/></label><br/>
       price: ${price}<br/>
       author: {author}<br/>
       copies: {number}<br/>

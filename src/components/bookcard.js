@@ -22,7 +22,7 @@ import Img19 from '../images/olivertwist.jfif';
 import Img20 from '../images/alice.jfif';
 import Img21 from '../images/pinocchio.jfif';
 import {Link} from 'react-router-dom';
-
+import Button from 'react-bootstrap/Button'
 export default function bookcard(book) {
     const {id,title,author,type,price,src,category} =book;
 const imgarray=[Img1,Img2,Img3,Img4,Img5,Img6,Img7,Img8,Img9,Img10,
@@ -46,11 +46,11 @@ let imgsrc=imgarray[id-1];
             Author: {author}<br/>
             Category: {category}<br/>
             Type: {type}<br/>
-            Price: ${price}<br/>
+            Price: ${price}<br/><br/>
             <Link to=
                 {"/showbook"}
                  state={book}>
-                <button>Show book</button>
+                <Button variant="primary" size='sm'>Show book</Button>
             </Link>
             </div>
         </div>
