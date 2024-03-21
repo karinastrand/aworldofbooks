@@ -93,7 +93,7 @@ const allItems=(value)=>
           <div >
               <h2>Cart</h2>
               {Cart.map(allItems)}
-              <label style={{fontSize:17, fontWeight:"bold"} }>In total: ${cartres}<br/></label>
+              <label style={{fontSize:17, fontWeight:"bold"} }>In total: ${cartres}<br/></label><br/><br/>
               <button onClick={HandleClick} disabled={isButtonDisabled}>ClearCart</button>
           </div>
           <div className='cartpage2'>
@@ -101,7 +101,7 @@ const allItems=(value)=>
             <h3>Info</h3>
             <p style={{fontSize:14, alignItems:"center"}}>
                 Fill in name and email. Click on 'Check out'.<br/> You will get an email with <br/>
-                confirmation and details about payment.<br/> When you click on check out your <br/>
+                confirmation and details about payment,<br/> if its a pdf book you will get a link to download.<br/> When you click on check out your <br/>
                 cart will be emptied.<br/> Thank you for shopping here!
             </p>
               <div className='checkout'>
