@@ -37,7 +37,6 @@ export default function Searchbooks() {
       return;
     }
    })
-
   const selectedBooks=(values)=>{
     if (values.title.toLocaleLowerCase().includes(searchVal.toLocaleLowerCase())
     || values.type.toLocaleLowerCase().includes(searchVal.toLocaleLowerCase())
@@ -54,22 +53,16 @@ export default function Searchbooks() {
       price={values.price}
       src={values.src}
       />
-
     </div>
-    );
-    
+    ); 
 }
-
-
-  
   return (
     
    <div>
      <Menu />
       <div>
-      <h2 style={{margin:10}}>Search book</h2>
+      <h2 style={{margin:10}}>Search books</h2>
         <div className='booktop'>
-        
         <div>
         <input onChange={e=>setSearchVal(e.target.value)}></input>
         <BsSearch onClick={handleSearchClick}/>
@@ -78,12 +71,9 @@ export default function Searchbooks() {
         <IconButton icon={<BsCart3 />} 
           disabled={isButtonDisabled}
           appearance='primary'
-          
-        ></IconButton>
-     
-        </Link>
-        
-        </div>
+          ></IconButton>
+             </Link>
+          </div>
           <div className='bookdisplay'>
           {Books.map(selectedBooks)}
           </div>
