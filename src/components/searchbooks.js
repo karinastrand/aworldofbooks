@@ -67,7 +67,7 @@ export default function Searchbooks() {
    <div>
      <Menu />
       <div>
-      <h2 style={{margin:10}}>Search books</h2>
+      <h2 style={{margin:10}}>Search book</h2>
         <div className='booktop'>
         
         <div>
