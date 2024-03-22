@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/aworldofbooks/static/css/main.d8444f97.css",
+    "main.js": "/aworldofbooks/static/js/main.918b4996.js",
+    "static/js/453.2ac77951.chunk.js": "/aworldofbooks/static/js/453.2ac77951.chunk.js",
+    "static/media/Logo.png": "/aworldofbooks/static/media/Logo.4d49f1731f0c5d0e0353.png",
+    "static/media/100herbstogrow.png": "/aworldofbooks/static/media/100herbstogrow.e086b1ec0a53055fb67e.png",
+    "static/media/pocketmadeira.png": "/aworldofbooks/static/media/pocketmadeira.7b4e260797633c31e64a.png",
+    "static/media/imnotsleepy.png": "/aworldofbooks/static/media/imnotsleepy.ee833417454ba37b8304.png",
+    "static/media/japantravelguide.png": "/aworldofbooks/static/media/japantravelguide.1051aab52251feafb59f.png",
+    "static/media/nepaltravelguide.png": "/aworldofbooks/static/media/nepaltravelguide.8ffb4d6cbff0a68548e5.png",
+    "static/media/whatmakesagarden.png": "/aworldofbooks/static/media/whatmakesagarden.6fec729e3463d0c56d7a.png",
+    "static/media/thecleancoder.png": "/aworldofbooks/static/media/thecleancoder.6b5d46ab0fc234ca57c0.png",
+    "static/media/100gomistakesandhowtoavoidthem.png": "/aworldofbooks/static/media/100gomistakesandhowtoavoidthem.9ac9d868e49d47664891.png",
+    "static/media/learningvue.png": "/aworldofbooks/static/media/learningvue.eacf2f5f6b6f9333cb26.png",
+    "static/media/home.jpg": "/aworldofbooks/static/media/home.0835c062e82beee1047e.jpg",
+    "static/media/beautyandthebeast.jfif": "/aworldofbooks/static/media/beautyandthebeast.ef95e09c7b7fbe2f225f.jfif",
+    "static/media/pinocchio.jfif": "/aworldofbooks/static/media/pinocchio.8d775d547df4cd0858d3.jfif",
+    "static/media/grymms.jfif": "/aworldofbooks/static/media/grymms.99e2c801b3dfdbfcb395.jfif",
+    "static/media/alice.jfif": "/aworldofbooks/static/media/alice.3b32f0e5863b84c93218.jfif",
+    "static/media/huckleberryfin.jfif": "/aworldofbooks/static/media/huckleberryfin.748fe0bfe27b7dbb41e9.jfif",
+    "static/media/olivertwist.jfif": "/aworldofbooks/static/media/olivertwist.071120ea28a25742e59e.jfif",
+    "index.html": "/aworldofbooks/index.html",
+    "main.d8444f97.css.map": "/aworldofbooks/static/css/main.d8444f97.css.map",
+    "main.918b4996.js.map": "/aworldofbooks/static/js/main.918b4996.js.map",
+    "453.2ac77951.chunk.js.map": "/aworldofbooks/static/js/453.2ac77951.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8444f97.css",
+    "static/js/main.918b4996.js"
+  ]
+}
