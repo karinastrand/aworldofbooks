@@ -13,11 +13,15 @@ export default function Menu() {
       <Outlet />
           <Row>
           <Col md={4} className="home-header">
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <h1 style={{ paddingBottom: 100 }} className="heading">
             Welcome to </h1>
             <Typewriter
               options={{
-              strings: "World of Books",
+              strings: " World of Books",
               autoStart: true,
               loop: true,
               deleteSpeed: 50,
