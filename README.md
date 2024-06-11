@@ -1,4 +1,4 @@
-# aworldofbooks
+# aworldofbooks 
 a web based book store under development
  https://karinastrand.github.io/aworldofbooks/
 # collaborators
